@@ -1,0 +1,4 @@
+Anomaly_ID,Date,Anomaly_Type,Sessions_Observed,Baseline_Average,Variance_Pct,Bounce_Rate_Pct,Avg_Duration_Sec,Error_Rate_Pct,Root_Cause_Investigation,Threat_Classification
+ANOM-01,2026-11-04,Spike (Volumetric),6850,1350,+407%,96.8%,4.2s,0.85%,"Automated distributed botnet scraping and credential stuffing against /api/login endpoint originating from ASN 45102.",Malicious (Botnet Probing)
+ANOM-02,2026-11-12,Drop (Outage),280,1350,-79%,88.4%,12.0s,18.40%,"Production SSL/TLS wildcard certificate renewal failure caused modern browsers to display HSTS security block screens.",Operational (Certificate Expiry)
+ANOM-03,2026-11-18,Spike (Organic Surge),5210,1350,+286%,28.4%,145.0s,0.05%,"Viral product feature spotlight published on Hacker News and Reddit, driving genuine high-intent user traffic.",Benign (Marketing/Viral Surge)

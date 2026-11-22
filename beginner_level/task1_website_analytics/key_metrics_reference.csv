@@ -1,0 +1,16 @@
+Metric_Name,Category,Measurement_Unit,Standard_Benchmark,Threat_Detection_Trigger
+Users,Audience,Count,Baseline dependent,>300% spike above 14-day moving average
+New_Users,Audience,Count,60-80% of total users,>95% new users during off-peak hours
+Sessions,Traffic,Count,1.2-1.5 per user,High session volume with single pageview per session
+Engagement_Rate,Behavior,Percentage,55-70%,<5% engagement during high volumetric influx
+Bounce_Rate,Behavior,Percentage,30-45%,>90% bounce rate on authentication endpoints
+Average_Session_Duration,Behavior,Seconds,60-120 seconds,<2 seconds median session duration
+Pageviews,Traffic,Count,2-4 per session,Rapid sequential pageviews (>10/sec) from single IP
+Conversion_Rate,Performance,Percentage,2-5%,Zero conversions during 5x traffic surge
+Desktop_Share,Technology,Percentage,35-45%,Sudden 99% desktop spike with headless Chrome signatures
+Mobile_Share,Technology,Percentage,55-65%,Unusual drop in mobile proportion
+Direct_Traffic_Share,Acquisition,Percentage,20-30%,Spike in direct traffic with empty referrer headers
+Organic_Search_Share,Acquisition,Percentage,40-55%,Sudden collapse in organic impressions (DNS/Index issue)
+Referral_Traffic_Share,Acquisition,Percentage,10-20%,Referrer domains matching known malicious domains
+HTTP_5xx_Errors,Reliability,Percentage,<0.1%,>1.0% error rate indicating backend DOS or application failure
+TTFB_Latency,Performance,Milliseconds,<300 ms,>2000 ms indicating resource exhaustion

@@ -1,0 +1,26 @@
+Mention_ID,Date,Platform,Author,Text,Category,Sentiment,Urgency
+MNT-101,2026-11-15,Twitter/X,@dev_sarah,"Loving the new telemetry dashboard on @NEXLEVR! Extremely fast setup.",Praise,Positive,Low
+MNT-102,2026-11-15,Reddit,u/sysadmin_dan,"Getting 504 gateway timeouts on NEXLEVR EU-Central cluster for 20 mins. Anyone else?",Complaints,Negative,High
+MNT-103,2026-11-15,LinkedIn,Alex Kumar,"Does NEXLEVR support ISO 27001 compliance export for enterprise audits?",Questions,Neutral,Medium
+MNT-104,2026-11-15,Twitter/X,@cloud_guru,"It would be awesome if NEXLEVR added Slack Webhook integration for real-time alerts.",Ideas,Positive,Low
+MNT-105,2026-11-16,Trustpilot,Robert K.,"Fastest incident response tooling I have used. Zero false positives so far.",Praise,Positive,Low
+MNT-106,2026-11-16,Twitter/X,@crypto_coder,"Why did my billing double this month? Your auto-scaling charges are confusing.",Complaints,Negative,Medium
+MNT-107,2026-11-16,Reddit,u/python_fanatic,"Can I use custom Python scripts inside the NEXLEVR monitoring pipeline?",Questions,Neutral,Low
+MNT-108,2026-11-16,G2,Elena M.,"NEXLEVR cut our daily log triage time in half. Highly recommend for SOC teams.",Praise,Positive,Low
+MNT-109,2026-11-17,Twitter/X,@sec_analyst_mark,"Bug alert: The export button in reports downloads an empty CSV on Firefox.",Complaints,Negative,Medium
+MNT-110,2026-11-17,Reddit,u/devops_brian,"Feature request: Dark mode by default for the threat hunting timeline view.",Ideas,Neutral,Low
+MNT-111,2026-11-17,LinkedIn,Priya Sen,"Shoutout to NEXLEVR support team for resolving our DNS issue in under 10 minutes!",Praise,Positive,Low
+MNT-112,2026-11-17,Twitter/X,@network_ninja,"What is the maximum retention window for raw PCAP logs in the free tier?",Questions,Neutral,Low
+MNT-113,2026-11-18,Trustpilot,David L.,"Account locked out after changing MFA device and support took 48 hours to respond.",Complaints,Negative,High
+MNT-114,2026-11-18,Twitter/X,@startup_founder,"NEXLEVR's alert rules helped us catch an unauthorized API scraper immediately.",Praise,Positive,Low
+MNT-115,2026-11-18,Reddit,u/cyber_hawk,"Would love an automated integration with Splunk or Elastic SIEM in future updates.",Ideas,Positive,Low
+MNT-116,2026-11-19,LinkedIn,Marcus Chen,"How does NEXLEVR handle GDPR data anonymization for IP addresses?",Questions,Neutral,Medium
+MNT-117,2026-11-19,Twitter/X,@frontend_dev,"The UI on mobile is sluggish when viewing >1000 events. Needs optimization.",Complaints,Negative,Low
+MNT-118,2026-11-19,G2,Sophia Taylor,"Phenomenal value for cybersecurity students and practitioners alike.",Praise,Positive,Low
+MNT-119,2026-11-20,Reddit,u/threat_hunter_99,"Idea: Add community-contributed Sigma detection rules to the alert repository.",Ideas,Positive,Medium
+MNT-120,2026-11-20,Twitter/X,@dev_adam,"Is there a student discount available for the Advanced SOC certification exam?",Questions,Neutral,Low
+MNT-121,2026-11-20,Trustpilot,Michael Chang,"Saved our production server from a ransomware probe last night. Incredible tool.",Praise,Positive,Low
+MNT-122,2026-11-21,Twitter/X,@linux_sys,"Documentation link for webhook payloads returns 404 page.",Complaints,Negative,Medium
+MNT-123,2026-11-21,LinkedIn,Samantha Ray,"Impressive growth and feature velocity from the NEXLEVR team this quarter.",Praise,Positive,Low
+MNT-124,2026-11-21,Reddit,u/infosec_junior,"Where can I find sample telemetry datasets to practice SOC threat triage?",Questions,Neutral,Low
+MNT-125,2026-11-21,Twitter/X,@automation_king,"Idea: Create a VS Code extension for writing and testing NEXLEVR alert rules.",Ideas,Positive,Low

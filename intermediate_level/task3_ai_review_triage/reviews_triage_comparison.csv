@@ -1,0 +1,31 @@
+Message_ID,Customer_Message,Human_Urgency,Human_Topic,AI_Urgency,AI_Topic,Agreement_Status,AI_Error_Analysis
+MSG-01,"Our entire production API is returning 500 errors, our customers cannot checkout!",P1-Critical,System Outage,P1-Critical,System Outage,Match,Correct
+MSG-02,"I am being charged twice for my subscription this month, please refund immediately.",P2-High,Billing,P2-High,Billing,Match,Correct
+MSG-03,"How do I export my weekly analytics reports to PDF format?",P4-Low,General Support,P4-Low,General Support,Match,Correct
+MSG-04,"Security alert: Someone from Russia just bypassed our 2FA and changed admin email!",P1-Critical,Security/Auth,P1-Critical,Security/Auth,Match,Correct
+MSG-05,"It would be wonderful if you added dark mode to the executive dashboard.",P4-Low,Feature Request,P4-Low,Feature Request,Match,Correct
+MSG-06,"Oh fantastic, another server crash right during Black Friday sale, absolutely wonderful job team!!!",P1-Critical,System Outage,P4-Low,Praise/Feedback,Mismatch,"Sarcasm Blindness: AI saw 'fantastic', 'wonderful', 'job' and classified as positive low-priority feedback."
+MSG-07,"My team loves the new threat hunting telemetry view! Best software ever!!!",P4-Low,Praise/Feedback,P1-Critical,Praise/Feedback,Mismatch,"Overconfidence on Punctuation: AI interpreted triple exclamation marks '!!!' as urgent emergency."
+MSG-08,"Database connection pooling latency spiked to 4500ms on us-east cluster.",P2-High,Performance/Bug,P2-High,Performance/Bug,Match,Correct
+MSG-09,"Can we pay via enterprise wire transfer / ACH instead of credit card?",P3-Normal,Billing,P3-Normal,Billing,Match,Correct
+MSG-10,"What are the password requirements when creating a new teammate profile?",P4-Low,General Support,P1-Critical,Security/Auth,Mismatch,"Keyword Hallucination: AI triggered on 'password' and incorrectly escalated to Critical Security Incident."
+MSG-11,"The CSV export button is greyed out on the file organizer report page.",P3-Normal,Performance/Bug,P3-Normal,Performance/Bug,Match,Correct
+MSG-12,"Ransomware probe detected attacking our open SFTP port, we need immediate incident support!",P1-Critical,Security/Auth,P1-Critical,Security/Auth,Match,Correct
+MSG-13,"Where can I read the API rate limits for the free tier developer plan?",P4-Low,General Support,P4-Low,General Support,Match,Correct
+MSG-14,"Credit card expired and account is past due, need to update payment method.",P3-Normal,Billing,P3-Normal,Billing,Match,Correct
+MSG-15,"Our SSL certificate is showing expired on the custom domain endpoint.",P1-Critical,Security/Auth,P1-Critical,Security/Auth,Match,Correct
+MSG-16,"Would love an integration with Microsoft Teams in addition to Slack.",P4-Low,Feature Request,P4-Low,Feature Request,Match,Correct
+MSG-17,"The mobile app crashes every time I open the alerts tab on iOS 18.",P2-High,Performance/Bug,P2-High,Performance/Bug,Match,Correct
+MSG-18,"Is there single sign-on (SSO) support with Okta on the professional tier?",P3-Normal,Security/Auth,P3-Normal,Security/Auth,Match,Correct
+MSG-19,"Cancel my subscription immediately or I will file a credit card chargeback dispute.",P2-High,Billing,P4-Low,General Support,Mismatch,"Underestimating Risk: AI failed to identify the severe legal/financial threat of a chargeback dispute."
+MSG-20,"Page load times in APAC region have doubled since yesterday's update.",P2-High,Performance/Bug,P2-High,Performance/Bug,Match,Correct
+MSG-21,"Thanks for resolving ticket #48102 so quickly, support was great.",P4-Low,Praise/Feedback,P4-Low,Praise/Feedback,Match,Correct
+MSG-22,"We suspect our API keys were accidentally pushed to a public GitHub repo.",P1-Critical,Security/Auth,P1-Critical,Security/Auth,Match,Correct
+MSG-23,"I am getting a 403 Forbidden error when accessing my own dashboard.",P2-High,Security/Auth,P2-High,Security/Auth,Match,Correct
+MSG-24,"Can you add webhook payload signing using HMAC SHA-256?",P4-Low,Feature Request,P4-Low,Feature Request,Match,Correct
+MSG-25,"Your system took down our web server because of an aggressive health check probe loop!",P1-Critical,System Outage,P1-Critical,System Outage,Match,Correct
+MSG-26,"The invoice from October has the wrong VAT number listed on it.",P3-Normal,Billing,P3-Normal,Billing,Match,Correct
+MSG-27,"Documentation for Python SDK has broken code snippets in section 4.",P3-Normal,Performance/Bug,P3-Normal,Performance/Bug,Match,Correct
+MSG-28,"We need a SOC 2 Type II audit compliance report for vendor risk review.",P3-Normal,General Support,P3-Normal,General Support,Match,Correct
+MSG-29,"Memory leak observed in the background telemetry agent after 48 hours of uptime.",P2-High,Performance/Bug,P2-High,Performance/Bug,Match,Correct
+MSG-30,"Website is great, but the checkout form failed to charge my card and then locked my account.",P2-High,Billing,P4-Low,Praise/Feedback,Mismatch,"Multi-Topic Masking: AI only focused on first clause 'Website is great' and ignored the critical billing failure."

@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-22",
+  "brand": "NEXLEVR Cloud Security",
+  "signals": {
+    "traffic_and_web": {
+      "total_sessions": 14250,
+      "baseline_sessions": 13800,
+      "bounce_rate_pct": 39.8,
+      "p95_latency_ms": 142,
+      "http_5xx_errors": 18,
+      "top_traffic_source": "Organic Search (48%)"
+    },
+    "uptime_and_health": {
+      "uptime_24h_pct": 99.98,
+      "outage_duration_minutes": 0,
+      "slowest_endpoint": "https://api.nexlevr.app/v1/auth/export (480ms)",
+      "synthetic_probes_run": 1440
+    },
+    "customer_feedback": [
+      {
+        "source": "G2",
+        "rating": 5,
+        "author": "TechLead_Austin",
+        "text": "The threat hunting telemetry dashboard is incredible for our SOC team."
+      },
+      {
+        "source": "Trustpilot",
+        "rating": 2,
+        "author": "David_Enterprise",
+        "text": "Great platform but invoice PDF generation is failing on Safari mobile browser."
+      }
+    ],
+    "social_mentions": [
+      {
+        "platform": "Twitter/X",
+        "handle": "@sec_analyst_dan",
+        "text": "Noticed @NEXLEVR added new Sigma alert rule templates today. Very clean update!"
+      },
+      {
+        "platform": "Reddit /r/cybersecurity",
+        "handle": "u/sysadmin_k",
+        "text": "Anyone experiencing slow webhook deliveries from NEXLEVR EU cluster around 08:00 UTC?"
+      }
+    ],
+    "threat_and_security": {
+      "waf_threats_blocked": 1420,
+      "credential_stuffing_attempts": 3,
+      "honeypot_triggers": 12,
+      "unauthorized_admin_probes": 0
+    }
+  }
+}

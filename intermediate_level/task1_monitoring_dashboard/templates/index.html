@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXLEVR SOC - Website Health & Telemetry Dashboard</title>
+    <style>
+        :root {
+            --bg: #0b0f19;
+            --surface: #111827;
+            --surface-border: #1f2937;
+            --accent: #38bdf8;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --text-main: #f9fafb;
+            --text-muted: #9ca3af;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; background: var(--bg); color: var(--text-main); padding: 2rem; }
+        .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--surface-border); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+        .header h1 { font-size: 1.6rem; color: var(--accent); }
+        .header .status-tag { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--success); font-weight: 600; }
+        .pulse { width: 10px; height: 10px; background: var(--success); border-radius: 50%; box-shadow: 0 0 10px var(--success); }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .card { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 12px; padding: 1.5rem; }
+        .card .title { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem; }
+        .card .value { font-size: 2.2rem; font-weight: 700; margin-bottom: 0.4rem; }
+        .card .subtext { font-size: 0.8rem; color: var(--text-muted); }
+        .val-good { color: var(--success); }
+        .val-speed { color: var(--accent); }
+        .val-error { color: #a78bfa; }
+        table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 12px; overflow: hidden; border: 1px solid var(--surface-border); }
+        th, td { padding: 1rem 1.25rem; text-align: left; font-size: 0.9rem; }
+        th { background: #1f2937; color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        tr:not(:last-child) td { border-bottom: 1px solid var(--surface-border); }
+        .badge { padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+        .badge-online { background: rgba(16, 185, 129, 0.15); color: var(--success); border: 1px solid var(--success); }
+        .badge-warn { background: rgba(245, 158, 11, 0.15); color: var(--warning); border: 1px solid var(--warning); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>NEXLEVR SOC · Website Telemetry & Uptime Monitor</h1>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.3rem;">Real-time synthetic probes: Uptime, TTFB speed, and HTTP status codes</p>
+        </div>
+        <div class="status-tag">
+            <span class="pulse"></span> ALL SYSTEMS OPERATIONAL
+        </div>
+    </div>
+
+    <div class="metrics-grid">
+        <div class="card">
+            <div class="title">30-Day Uptime</div>
+            <div class="value val-good">99.96%</div>
+            <div class="subtext">SLA Target: 99.90% · 2m 14s total downtime</div>
+        </div>
+        <div class="card">
+            <div class="title">Average Response Speed (TTFB)</div>
+            <div class="value val-speed">142 ms</div>
+            <div class="subtext">PageSpeed Score: 98/100 · Core Web Vitals Passed</div>
+        </div>
+        <div class="card">
+            <div class="title">HTTP Error Rate</div>
+            <div class="value val-error">0.03%</div>
+            <div class="subtext">21 errors out of 68,400 requests (mostly 404s)</div>
+        </div>
+    </div>
+
+    <h2 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--accent);">Monitored Endpoints & Health Status</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Service / Route</th>
+                <th>Target URL</th>
+                <th>Status</th>
+                <th>Response Time</th>
+                <th>SSL Certificate</th>
+                <th>Last Probe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Primary Web Portal</strong></td>
+                <td><code>https://nexlevr.app/</code></td>
+                <td><span class="badge badge-online">200 OK</span></td>
+                <td>118 ms</td>
+                <td>Valid (Expires in 82 days)</td>
+                <td>Just now</td>
+            </tr>
+            <tr>
+                <td><strong>Authentication API Gateway</strong></td>
+                <td><code>https://api.nexlevr.app/v1/auth/health</code></td>
+                <td><span class="badge badge-online">200 OK</span></td>
+                <td>84 ms</td>
+                <td>Valid (Expires in 82 days)</td>
+                <td>Just now</td>
+            </tr>
+            <tr>
+                <td><strong>Static CDN Asset Node</strong></td>
+                <td><code>https://cdn.nexlevr.app/assets/status.json</code></td>
+                <td><span class="badge badge-online">200 OK</span></td>
+                <td>42 ms</td>
+                <td>Valid (Cloudflare Edge)</td>
+                <td>Just now</td>
+            </tr>
+            <tr>
+                <td><strong>Search Indexing Telemetry</strong></td>
+                <td><code>Google Search Console Webhook</code></td>
+                <td><span class="badge badge-warn">Crawl Warning</span></td>
+                <td>210 ms</td>
+                <td>Valid</td>
+                <td>12m ago</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

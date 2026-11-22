@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-11-22T10:45:00Z",
+  "metrics": {
+    "traffic_sessions_current": 420,
+    "traffic_sessions_baseline": 950,
+    "p95_latency_ms": 3100,
+    "latency_consecutive_breaches": 3,
+    "total_requests_5min": 3200,
+    "http_5xx_count": 210,
+    "failed_logins_per_min": 78,
+    "failed_login_target_usernames": 34,
+    "source_ip": "198.51.100.42",
+    "social_review": {
+      "rating": 1,
+      "author_followers": 2400,
+      "text": "NEXLEVR is completely down and our payment gateway is leaking data! Fix this scam!",
+      "sentiment_score": -0.85
+    }
+  }
+}
